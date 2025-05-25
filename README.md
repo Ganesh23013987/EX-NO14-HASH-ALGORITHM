@@ -43,8 +43,7 @@ void computeSimpleHash(const char *message, unsigned char *hash) {
         temp = temp ^ message[i];  
         temp += message[i];        
     }
-    
-    // Store the result in the hash
+
     *hash = temp;
 }
 
